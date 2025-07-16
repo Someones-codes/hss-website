@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Howick Secondary School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="admission.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Howick Secondary School Logo" class="logo">
+                <div>
+                    <div class="school-name">Howick Secondary School</div>
+                    <div class="school-motto">DARE TO DO RIGHT</div>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+     <!--picutes -->
+<section class="hero" style="
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;">
+    
+    <div class="hero-content">
+        <h1 style="font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Admissions</h1>
+        <p style="font-size: 1.5rem; max-width: 700px; margin: 0 auto; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+            Begin your educational journey with Howick Secondary School
+        </p>
+    </div>
+</section>
+
+
+    <div class="container">
+        <div class="admissions-container">
+            <!-- Requirements Section -->
+            <div class="requirements">
+                <h2><i class="fas fa-info-circle"></i> Admission Requirements</h2>
+                
+                <div class="info-box">
+                    <h3><i class="fas fa-file-alt"></i> Essential Documentation</h3>
+                    <ul>
+                        <li>Unabridged birth certificate</li>
+                        <li>Most recent school report</li>
+                        <li>Immunization card</li>
+                        <li>2 passport photos</li>
+                        <li>Proof of residence (utility bill)</li>
+                        <li>Parent/guardian ID copies</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <h3><i class="fas fa-graduation-cap"></i> Academic Requirements</h3>
+                    <p>Applicants must provide their final report from the previous academic year:</p>
+                    <ul>
+                        <li><strong>Grade 8:</strong> Grade 7 final report</li>
+                        <li><strong>Grade 9:</strong> Grade 8 final report</li>
+                        <li><strong>Grade 10:</strong> Grade 9 final report</li>
+                        <li><strong>Grade 11:</strong> Grade 10 final report</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <h3><i class="fas fa-calendar-alt"></i> Key Dates</h3>
+                    <ul class="dates">
+                        <li><strong>Grade 8 Applications:</strong> Open 1 March 2025 | Deadline: 28 February 2026</li>
+                        <li><strong>Grades 9-11:</strong> Rolling admissions (subject to availability)</li>
+                        <li><strong>Scholarship Deadline:</strong> 28 February 2026</li>
+                        <li><strong>Notification of Acceptance:</strong> By 31 May 2026</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <h3><i class="fas fa-money-bill-wave"></i> Fee Information</h3>
+                    <p>2026 Annual School Fee: <strong>R45,500</strong></p>
+                    <p>Payment plans and financial assistance available for qualifying families.</p>
+                    <p>Based on South African Schools Act Section 40</p>
+                </div>
+            </div>
+            
+            <!-- Application Form -->
+            <div class="form-container">
+                <h2><i class="fas fa-edit"></i> Application Form</h2>
+                <form id="admissionForm">
+                    <!-- Learner Information -->
+                    <div class="form-group">
+                        <h3>Learner Information</h3>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name <span>*</span></label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name <span>*</span></label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth <span>*</span></label>
+                            <input type="date" id="dob" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender <span>*</span></label>
+                            <select id="gender" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="currentGrade">Applying for Grade <span>*</span></label>
+                        <select id="currentGrade" required>
+                            <option value="">Select Grade</option>
+                            <option value="8">Grade 8</option>
+                            <option value="9">Grade 9</option>
+                            <option value="10">Grade 10</option>
+                            <option value="11">Grade 11</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Parent/Guardian Information -->
+                    <div class="form-group">
+                        <h3>Parent/Guardian Information</h3>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parentName">Full Name <span>*</span></label>
+                            <input type="text" id="parentName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="relationship">Relationship <span>*</span></label>
+                            <input type="text" id="relationship" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parentEmail">Email <span>*</span></label>
+                            <input type="email" id="parentEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="parentPhone">Phone <span>*</span></label>
+                            <input type="tel" id="parentPhone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Residential Address <span>*</span></label>
+                        <textarea id="address" rows="2" required></textarea>
+                    </div>
+                    
+                    <!-- Academic History -->
+                    <div class="form-group">
+                        <h3>Academic History</h3>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prevSchool">Previous School <span>*</span></label>
+                        <input type="text" id="prevSchool" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Upload Final Report <span>*</span></label>
+                        <div class="file-upload" id="reportUpload">
+                            <i class="fas fa-file-pdf"></i>
+                            <p>Click to upload PDF or JPG</p>
+                            <p><small>Max file size: 5MB</small></p>
+                            <input type="file" id="reportFile" accept=".pdf,.jpg,.jpeg" required>
+                            <span class="file-name" id="reportFileName">No file selected</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Document Upload -->
+                    <div class="form-group">
+                        <h3>Required Documents</h3>
+                        <p>Please upload certified copies of the following:</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Birth Certificate <span>*</span></label>
+                        <div class="file-upload" id="birthCertUpload">
+                            <i class="fas fa-file-upload"></i>
+                            <p>Click to upload birth certificate</p>
+                            <input type="file" id="birthCertFile" accept=".pdf,.jpg,.jpeg" required>
+                            <span class="file-name" id="birthCertFileName">No file selected</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Parent/Guardian ID <span>*</span></label>
+                        <div class="file-upload" id="parentIdUpload">
+                            <i class="fas fa-id-card"></i>
+                            <p>Click to upload ID document</p>
+                            <input type="file" id="parentIdFile" accept=".pdf,.jpg,.jpeg" required>
+                            <span class="file-name" id="parentIdFileName">No file selected</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Proof of Residence <span>*</span></label>
+                        <div class="file-upload" id="residenceUpload">
+                            <i class="fas fa-home"></i>
+                            <p>Click to upload proof of residence</p>
+                            <input type="file" id="residenceFile" accept=".pdf,.jpg,.jpeg" required>
+                            <span class="file-name" id="residenceFileName">No file selected</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Declaration -->
+                    <div class="declaration">
+                        <h3>Declaration</h3>
+                        <p>I understand that:</p>
+                        <ul>
+                            <li>Submission of this application does not guarantee admission</li>
+                            <li>I must apply to at least 3 schools as per KZN Department of Education policy</li>
+                            <li>School fees are mandatory with installment options available</li>
+                            <li>All information provided is accurate and documents are certified copies</li>
+                        </ul>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="declaration" required>
+                            <label for="declaration">I accept the terms and conditions stated above <span>*</span></label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Howick Secondary School</h3>
+                    <p>Providing quality education to the Howick community since 1952.</p>
+                    <p><em>DARE TO DO RIGHT</em></p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Admissions Office</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Road, Howick, KZN</p>
+                    <p><i class="fas fa-phone"></i> (033) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> admissions@hss.co.za</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="contect.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Howick Secondary School. All Rights Reserved. | DARE TO DO RIGHT</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // File upload functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Report file upload
+            const reportUpload = document.getElementById('reportUpload');
+            const reportFile = document.getElementById('reportFile');
+            const reportFileName = document.getElementById('reportFileName');
+            
+            reportUpload.addEventListener('click', () => {
+                reportFile.click();
+            });
+            
+            reportFile.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    reportFileName.textContent = e.target.files[0].name;
+                }
+            });
+            
+            // Birth certificate upload
+            const birthCertUpload = document.getElementById('birthCertUpload');
+            const birthCertFile = document.getElementById('birthCertFile');
+            const birthCertFileName = document.getElementById('birthCertFileName');
+            
+            birthCertUpload.addEventListener('click', () => {
+                birthCertFile.click();
+            });
+            
+            birthCertFile.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    birthCertFileName.textContent = e.target.files[0].name;
+                }
+            });
+            
+            // Parent ID upload
+            const parentIdUpload = document.getElementById('parentIdUpload');
+            const parentIdFile = document.getElementById('parentIdFile');
+            const parentIdFileName = document.getElementById('parentIdFileName');
+            
+            parentIdUpload.addEventListener('click', () => {
+                parentIdFile.click();
+            });
+            
+            parentIdFile.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    parentIdFileName.textContent = e.target.files[0].name;
+                }
+            });
+            
+            // Residence proof upload
+            const residenceUpload = document.getElementById('residenceUpload');
+            const residenceFile = document.getElementById('residenceFile');
+            const residenceFileName = document.getElementById('residenceFileName');
+            
+            residenceUpload.addEventListener('click', () => {
+                residenceFile.click();
+            });
+            
+            residenceFile.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    residenceFileName.textContent = e.target.files[0].name;
+                }
+            });
+            
+            // Form submission
+            const admissionForm = document.getElementById('admissionForm');
+            
+            admissionForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validate file uploads
+                const report = reportFile.files[0];
+                const birthCert = birthCertFile.files[0];
+                const parentId = parentIdFile.files[0];
+                const residence = residenceFile.files[0];
+                
+                // Check file types
+                const validExtensions = ['application/pdf', 'image/jpeg', 'image/jpg'];
+                
+                if (report && !validExtensions.includes(report.type)) {
+                    alert('Please upload the report in PDF or JPG format');
+                    return;
+                }
+                
+                if (birthCert && !validExtensions.includes(birthCert.type)) {
+                    alert('Please upload the birth certificate in PDF or JPG format');
+                    return;
+                }
+                
+                if (parentId && !validExtensions.includes(parentId.type)) {
+                    alert('Please upload the ID document in PDF or JPG format');
+                    return;
+                }
+                
+                if (residence && !validExtensions.includes(residence.type)) {
+                    alert('Please upload proof of residence in PDF or JPG format');
+                    return;
+                }
+                
+                // Check file sizes (max 5MB)
+                const maxSize = 5 * 1024 * 1024; // 5MB
+                
+                if (report && report.size > maxSize) {
+                    alert('Report file size exceeds 5MB limit');
+                    return;
+                }
+                
+                if (birthCert && birthCert.size > maxSize) {
+                    alert('Birth certificate file size exceeds 5MB limit');
+                    return;
+                }
+                
+                if (parentId && parentId.size > maxSize) {
+                    alert('ID document file size exceeds 5MB limit');
+                    return;
+                }
+                
+                if (residence && residence.size > maxSize) {
+                    alert('Proof of residence file size exceeds 5MB limit');
+                    return;
+                }
+                
+                // Form is valid - show success message
+                alert('Thank you! Your application has been submitted successfully.\n\nOur admissions team will review your application and contact you within 5 working days.');
+                
+                // Reset form
+                admissionForm.reset();
+                reportFileName.textContent = 'No file selected';
+                birthCertFileName.textContent = 'No file selected';
+                parentIdFileName.textContent = 'No file selected';
+                residenceFileName.textContent = 'No file selected';
+            });
+        });
+    </script>
+</body>
+</html>
